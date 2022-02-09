@@ -1,13 +1,52 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/eriste.jpeg");
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: rgba(255,255,255,0.5)
+}
+
+#title {
+  margin-bottom: 30px;
+}
+
+#timer div {
+  background-color: #000000cc;
+  color: #ffffff;
+  width: 300px;
+  height: 310px;
+  border-radius: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+#timer div span {
+  display: block;
+  margin-top: -2px;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  #timer {
+    margin-top: -20px;
+  }
+  #timer div {
+    width: 95px;
+    height: 100px;
+    font-size: 32px;
+    margin-top: 20px;
+ }
+ #timer div span {
+   font-size: 14px;
+ }
 }
