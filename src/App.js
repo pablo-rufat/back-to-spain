@@ -28,7 +28,7 @@ const parseInterval = (interval) => {
 }; 
 
 const calculateTimeLeft = () => {
-  const finalDate = new Date(2022, 2, 21, 5, 10, 0, 0);
+  const finalDate = new Date(2022, 2, 20, 5, 10, 0, 0);
   const difference = ( finalDate - new Date());
 
   let timeLeft = {};
